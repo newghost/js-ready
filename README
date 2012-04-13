@@ -1,0 +1,7 @@
+Check a object, when it's avaiable exec the function,
+
+When the javascript package is loaded in asynchronous thread you can use it, etc:
+
+$async("jQuery.extend", function(){
+    console.log("jQuery is ready!");
+});
