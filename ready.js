@@ -1,6 +1,6 @@
 /*
 * Description: Check a object, when it's avaiable exec the function, etc:
-  $async("CompanyNamespace.Package.FunctionName", function(){ 
+  $ready("CompanyNamespace.Package.FunctionName", function(){ 
       //do something with CompanyNamespace.Package.FunctionName;
   });
 * Author: Kris Zhang
@@ -10,7 +10,7 @@
 
 (function(window){
 
-  window.$async = function(tag, func) {
+  window.$ready = function(tag, func) {
     var syncId, count = 200,
         tagAry = tag.split('.'), len = tagAry.length;
 
